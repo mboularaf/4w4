@@ -10,7 +10,7 @@
     - après avoir fait un commit le dépôt est clair
 - git **add --all** ou **git add  .**
 - git **commit -m "s2c1 on décrit les modification"**
-- git log
+- git log 
 - git log --oneline
 - git remote add 4w4 https://github.com/mboularaf/4w4.git
 - git branch -m main  (change le nom de la branche master pour main)
