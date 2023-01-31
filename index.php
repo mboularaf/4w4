@@ -5,7 +5,7 @@
 ?>
 <?php 
 /** 
- * Titre du site 
+ * Titre d'accueil
 */
 ?>
 <?php get_header();?>
