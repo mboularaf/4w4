@@ -21,7 +21,7 @@
                         <a href="<?php the_permalink() ?>"><h3><?php the_title();//afficher le titre du post?></h3></a>
                         <h6>Extrait:</h6><?php the_excerpt(); ?> 
                         <h6>Le contenu:</h6><?php the_content();//afficher le contenu ?>
-                        <?php the_permalink() ?>
+                        <?php the_permalink();?>
                     </article>
                     <hr>
                 <?php endwhile; ?>

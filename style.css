@@ -372,4 +372,32 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+/*-------------------- header */
+header {
+  background-color: rgb(205, 33, 33);
+}
+
 /* --------------------------------------------- composant */
+.site__titre {
+  text-decoration: none;
+  color: rgb(131, 129, 129);
+  display: flex;
+}
+
+.site__titre h1 {
+  font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
+}
+
+/* ///////////////////////////////// menu__entete */
+.menu__entete {
+  background-color: black;
+}
+.menu__entete .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.menu__entete .menu .menu-item a {
+  padding: 3px 5px;
+  color: white;
+}
