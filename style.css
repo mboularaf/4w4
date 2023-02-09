@@ -372,20 +372,46 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-/*-------------------- header */
-header {
+body {
   background-color: rgb(205, 33, 33);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body main {
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(155, 17, 17);
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+a:active, a:focus {
+  color: blue;
+}
+a:visited {
+  color: rgb(0, 145, 255);
+}
+a:hover {
+  color: rgb(235, 55, 0);
 }
 
 /* --------------------------------------------- composant */
 .site__titre {
   text-decoration: none;
   color: rgb(131, 129, 129);
-  display: flex;
 }
 
 .site__titre h1 {
   font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
+}
+
+.custom-logo {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
 }
 
 /* ///////////////////////////////// menu__entete */
@@ -396,8 +422,13 @@ header {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
+  position: absolute;
+  right: 0%;
+  padding-top: 1rem;
 }
 .menu__entete .menu .menu-item a {
-  padding: 3px 5px;
-  color: white;
+  padding: 1rem;
+  box-shadow: 10px 15px 20px;
+  background-color: bisque;
+  margin: 1rem;
 }

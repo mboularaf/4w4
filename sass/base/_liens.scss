@@ -1,0 +1,13 @@
+a{
+    color: orange;
+    text-decoration: none;
+    &:active, &:focus{
+        color:blue;
+    }
+    &:visited{
+        color:rgb(0, 145, 255);
+    }
+    &:hover{
+        color:rgb(235, 55, 0);
+    }
+}

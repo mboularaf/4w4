@@ -19,9 +19,12 @@ Text Domain: 4w4 Mohamed Boularaf
 
 /* --------------------------------------------- base */
 @import "base/heading";
+@import "base/body";
+@import "base/liens";
 //@import "base/espacement";
 //@import "base/lien";
 //@import "base/list";
 
 /* --------------------------------------------- composant */
 @import "composant/entete";
+
