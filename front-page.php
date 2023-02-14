@@ -23,7 +23,6 @@
                         <?= get_the_excerpt(); ?>
                         <?= wp_trim_words(get_the_excerpt(), 10, "...");?>                      
                     </article>
-                    <hr>
                 <?php endwhile; ?>
         <?php endif; ?>
         </section>

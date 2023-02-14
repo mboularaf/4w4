@@ -1,17 +1,17 @@
-# Laboratoire #1
+# Laboratoire #3
 ## 4W4-Conception d'interfaces et développement web
 ### Auteur : Mohamed Boularaf
 
 ####    Objectifs
-- Installer Wordpress localment
-- Réaliser une première version d'un thème 
+- Installer et utiliser les extensions Markdown (Import Markdown, 	
+  WP Githuber MD), pour pouvoir exporter les différents textes localement et sur Site Ground.
+- Les textes dans chacun des articles sont des courts résumés.
+- Modifier le style pour pouvoir un design unique.
 
 #### Liens de référence 
-- Site du prof sur site ground
-    - htpps://eddytuto.sg-host.com/
-- Github //*eddytuto*//
-- https://github.com/eddytuto
+- Mon site sur site ground
+    - https://cidweb24.sg-host.com/
+- Github //*mboularaf*//
+- https://github.com/mboularaf/4w4
 - https://fr.wordpress.org
-- Pour visualiser sur VC installer Markdown Preview Enhanced
-- Pour activer `ctrl-shift-v`
 - htpps://developer.wordpress.org/themes/basics/ 
