@@ -398,7 +398,19 @@ a:hover {
   color: rgb(235, 55, 0);
 }
 
+pre {
+  background-color: #333;
+  color: white;
+  overflow: scroll;
+}
+
 /* --------------------------------------------- composant */
+.entete__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site__titre {
   text-decoration: none;
   color: rgb(131, 129, 129);
@@ -407,22 +419,20 @@ a:hover {
 .site__titre h1 {
   font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
 }
+.site__titre h1 a {
+  text-decoration: none;
+}
 
 .custom-logo {
-  display: block;
   border-radius: 50%;
-  position: absolute;
+  padding: 1rem;
 }
 
 /* ///////////////////////////////// menu__entete */
-.menu__entete {
-  background-color: black;
-}
 .menu__entete .menu {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
-  position: absolute;
   right: 0%;
   padding-top: 1rem;
 }
@@ -431,4 +441,16 @@ a:hover {
   box-shadow: 10px 15px 20px;
   background-color: bisque;
   margin: 1rem;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  flex: 1 0 250px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #aaa;
 }
