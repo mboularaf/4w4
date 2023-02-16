@@ -7,6 +7,7 @@
   WP Githuber MD), pour pouvoir exporter les différents textes localement et sur Site Ground.
 - Les textes dans chacun des articles sont des courts résumés.
 - Modifier le style pour pouvoir un design unique.
+- Importation d'article SQL.
 
 #### Liens de référence 
 - Mon site sur site ground

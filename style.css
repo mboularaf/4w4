@@ -381,7 +381,7 @@ body {
 body main {
   align-items: center;
   padding: 1rem;
-  background-color: rgb(155, 17, 17);
+  background-color: rgb(171, 39, 39);
 }
 
 a {
@@ -398,6 +398,48 @@ a:hover {
   color: rgb(235, 55, 0);
 }
 
+ul,
+ol {
+  margin: 1rem, 0rem;
+  padding: 3px;
+  list-style-type: none;
+}
+@media screen and (min-width: 400px) {
+  ul,
+  ol {
+    margin: 1rem 0.5rem;
+    padding: 13px;
+    list-style-type: square;
+  }
+}
+@media screen and (min-width: 700px) {
+  ul,
+  ol {
+    margin: 1rem 0.5rem;
+    padding: 15px;
+  }
+}
+
+ul li,
+ol li {
+  margin: 0.5rem 0rem;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -30px;
+  margin-top: -0.9em;
+  background: linear-gradient(45deg, #9986ce, #f9dd94);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+/*li> ol{}
+li > ul {}
+*/
 pre {
   background-color: #333;
   color: white;
@@ -453,4 +495,6 @@ pre {
   padding: 5px;
   margin: 10px;
   border: 1px solid #aaa;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: #FFFDD0;
 }
