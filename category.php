@@ -10,21 +10,34 @@
 */
 ?>
 <?php get_header();?>
+<main class="site__main">
+   <section class="blocflex">
+      <?php
+      $category = get_queried_object();
+      // Permet de définir la nouvelle requête est basée
+      // sur la nouvelle requete contenu dans $query
+      $args = array(
+         'category_name' => $category->slug,
+         'orderby' => 'title',
+         'order' => 'ASC'
+      );
+      // Création D'une nouvelle requête
+      $query = new WP_Query( $args );
+      // Tout le reste de l'extractuib de données est basée
+      // sur la nouvelle requete contenu dans $ query
+      if ( $query->have_posts() ) :
+         while ( $query->have_posts() ) : $query->the_post(); ?>
+            <article>
+               <h2><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h2>
+               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+            </article>
+         <?php endwhile; ?>
+      <?php endif;
+      wp_reset_postdata();?>
+   </section>
+</main>
 
-    <main>
-        <pre>category.php</pre>
-        <h1>Bienvenue sur 4W4</h1>
-        <section class="blocflex">
-            <?php if (have_posts()):
-                while(have_posts()):the_post();//extrait un objet "post"?>
-                <article>
-                    <h5><a href="<?php the_permalink() ?>"><?php the_title();//afficher le titre du post?></a></h5>
-                    <?= wp_trim_words(get_the_excerpt(), 10, "...");?>                      
-                </article>
-            <?php endwhile; ?>
-            <?php endif; ?>
-        </section>
-    </main>
+
 
     <?php get_footer();?>    
 </body>

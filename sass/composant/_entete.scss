@@ -2,6 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .navi{
+        display: flex;       
+    }
+    /*.recherche{
+        position:absolute;
+        top:1rem;
+        left:98rem;
+    }*/
+    
 }
 .site__titre{
     text-decoration: none;
@@ -31,7 +41,7 @@
        .menu-item{
         a{
             padding: 1rem;
-            box-shadow: 10px 15px 20px;
+            box-shadow: 0.6rem 0.9rem 1.25rem;//10px 15px 20px
             background-color: bisque;
             margin: 1rem;
          }
@@ -45,10 +55,6 @@
             margin-inline-end: .3rem;
           
         }
-        .navi{
-            display: flex;
-            justify-content: end;
-           
-        }
+
     }
 }
