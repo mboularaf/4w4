@@ -4,8 +4,13 @@ body{
     flex-direction: column;
     position: relative;
     main{
+        display:flex;
         align-items: center;
         padding: 1rem;
-        background-color: rgb(171, 39, 39);
+        background-color: rgb(172, 41, 41);
+        
+     
     }
+
+
 }
