@@ -8,6 +8,7 @@
 - Les textes dans chacun des articles sont des courts résumés.
 - Modifier le style pour pouvoir un design unique.
 - Importation d'article SQL.
+- Création des catégories pour classer les cours et les notes 4w4.
 
 #### Liens de référence 
 - Mon site sur site ground
