@@ -9,7 +9,7 @@
 - Modifier le style pour pouvoir un design unique.
 - Importation d'article SQL.
 - Création des catégories pour classer les cours et les notes 4w4.
-- Ajout d'une page 404 quand l'utlisateur écrit un mot.
+- Ajout d'une page 404 quand l'utlisateur écrit un mot autre que les catégories dans l'url.
 
 #### Liens de référence 
 - Mon site sur site ground
