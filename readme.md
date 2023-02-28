@@ -1,15 +1,10 @@
-# Laboratoire #3
+# TP1
 ## 4W4-Conception d'interfaces et développement web
 ### Auteur : Mohamed Boularaf
 
 ####    Objectifs
-- Installer et utiliser les extensions Markdown (Import Markdown, 	
-  WP Githuber MD), pour pouvoir exporter les différents textes localement et sur Site Ground.
-- Les textes dans chacun des articles sont des courts résumés.
-- Modifier le style pour pouvoir un design unique.
-- Importation d'article SQL.
-- Création des catégories pour classer les cours et les notes 4w4.
-- Ajout d'une page 404 quand l'utlisateur écrit un mot autre que les catégories dans l'url.
+- Faire en sorte que le site soit adaptatif.
+- Modifier le design pour en faire un site encore meilleur.
 
 #### Liens de référence 
 - Mon site sur site ground

@@ -1,0 +1,40 @@
+/**
+Mise en page générale avec display:grid
+*/
+
+.site__entete {
+    grid-area: header;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: antiquewhite;
+  }
+.site__main{
+    grid-area: main;
+    background-color: rgb(167, 181, 225);
+ 
+}
+.site__footer{
+    grid-area:footer;
+    background-color: rgb(72, 105, 213);
+}
+.site__aside{
+    grid-area:aside;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: rgb(72, 105, 213);
+}
+.site {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+    //row-gap: 50px;
+    @media screen and (min-width:1000px) {
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    }
+  }
