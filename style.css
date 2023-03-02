@@ -558,7 +558,7 @@ Mise en page générale avec display:grid
 
 .site__footer {
   grid-area: footer;
-  background-color: rgb(72, 105, 213);
+  background-color: rgb(40, 61, 133);
 }
 
 .site__aside {

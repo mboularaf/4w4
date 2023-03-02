@@ -34,6 +34,7 @@
         $menu= $category->slug;
     }
     else{$menu = "note-4w4";}
+    // $menu peut prendre deux valeurs soit note-4w4 ou cours
     //echo $menu
     wp_nav_menu(array(
         "menu" => $menu,

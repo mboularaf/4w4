@@ -1,7 +1,9 @@
 <?php 
 /**
  * category.php est le modèle par défaut pour 
- * afficher une archive d'articles de catégorie spécifique 
+ * afficher une archive d'articles de catégorie spécifique
+ * localhost:8080/4w4gr1/category/cours/
+ * localhost:8080/4w4gr1/category/note-4w4/
  */
 ?>
 
@@ -26,9 +28,9 @@
          //echo $category->slug;
          if ($category->slug == "cours"){
             $sigle = substr($titre, 0, 7);
-            $titre_long = substr($titre, 7, -5);
-            $duree = "90";
-            $titre = $sigle;
+            $titre_long = substr($titre, 7, -5);//plus précis
+            $duree = "90";//faire ca par moi le nombre d'heure
+            $titre = $sigle; // titre principal s'affiche
          }
          
          ?>
