@@ -1,0 +1,24 @@
+.blocflex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h1{
+        padding: 5%;
+    }
+}
+.blocflex__article{
+ flex: 1 0 250px;
+ padding: 5px;
+ margin: 10px;
+ border: 3px solid rgb(218, 52, 52);
+ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ color: #FFFDD0;
+ 
+}
+.blocflex__article:hover{
+    background-color: rgb(77, 102, 172);
+    color:whitesmoke;
+}
+.blocflex__galerie{
+    flex: 1 0 100%;
+}
