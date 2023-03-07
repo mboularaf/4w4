@@ -379,6 +379,9 @@ body {
   flex-direction: column;
   position: relative;
 }
+body .site__description {
+  font-family: "Slackey", cursive;
+}
 body main {
   display: flex;
   flex-direction: column;
@@ -386,6 +389,9 @@ body main {
   padding: 1rem;
   background-color: rgb(172, 41, 41);
   height: auto;
+}
+body .site__footer {
+  color: white;
 }
 
 a {
@@ -563,18 +569,17 @@ Mise en page générale avec display:grid
 
 .site__main {
   grid-area: main;
-  background-color: rgb(167, 181, 225);
+  background-color: rgb(144, 177, 218);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: rgb(40, 61, 133);
+  background-color: rgb(10, 42, 80);
 }
 
 .site__aside {
   grid-area: aside;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(72, 105, 213);
+  background-color: rgb(139, 228, 173);
 }
 
 .site {
@@ -586,5 +591,15 @@ Mise en page générale avec display:grid
   .site {
     grid-template-columns: 20% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
+  }
+}
+
+.no-aside {
+  grid-template-areas: "header" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .no-aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
   }
 }

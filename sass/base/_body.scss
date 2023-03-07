@@ -3,6 +3,9 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    .site__description{
+        font-family: "Slackey", cursive;
+    }
     main{
         display:flex;
         flex-direction: column;
@@ -10,8 +13,14 @@ body{
         padding: 1rem;
         background-color: rgb(172, 41, 41);
         height: auto;
+        
      
     }
+    .site__footer{
+        color:white;
+
+    }
+    
 
 
 }
