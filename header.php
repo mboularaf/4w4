@@ -24,7 +24,7 @@ $nouvel_class="";
                                 "container_class" => "menu__entete"
 
                             )); ?>
-                <button class="burger"><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32"></button>            
+                <button class="burger" ><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32"></button>            
                 <?= get_search_form(); ?>  
 
             </div>         

@@ -6,7 +6,7 @@
  */ $titre =get_the_title();
     $sigle = substr($titre, 0, 7);
     $titre_long = substr($titre, 7, -5);//plus précis on a juste retiré 5 caractère
-    $duree = "90";//faire ca par moi le nombre d'heure
+    $duree = substr($titre, strpos($titre, '('));//faire ca par moi le nombre d'heure "90"
 
 ?>
 
