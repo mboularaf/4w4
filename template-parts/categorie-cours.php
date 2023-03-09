@@ -6,8 +6,7 @@
  */ $titre =get_the_title();
     $sigle = substr($titre, 0, 7);
     $titre_long = substr($titre, 7, -5);//plus précis on a juste retiré 5 caractère
-    $duree = substr($titre, strpos($titre, '('));//faire ca par moi le nombre d'heure "90"
-
+    $duree = substr($titre, strpos($titre, '('));//faire ca par moi le nombre d'heure pour chacun des cours
 ?>
 
 <article class="blocflex__article">
