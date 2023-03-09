@@ -473,7 +473,7 @@ pre {
   /*.navi{
       display: flex;       
   }
-      /*.recherche{
+      /*.recherche{ 
           position:absolute;
           top:1rem;
           left:98rem;
@@ -497,18 +497,35 @@ pre {
   padding: 1rem;
 }
 
+.menu__recherche {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1000px) {
+  .menu__recherche {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 /* ///////////////////////////////// menu__entete */
 .menu__entete .menu {
   display: flex;
+  transform: translateX(100%);
   list-style-type: none;
   justify-content: flex-end;
+  flex-direction: column;
   right: 0;
   padding-top: 1rem;
 }
+@media screen and (min-width: 1000px) {
+  .menu__entete .menu {
+    flex-direction: row;
+    transform: translateX(0);
+  }
+}
 .menu__entete .menu .menu-item a {
   padding: 1rem;
-  box-shadow: 0.6rem 0.9rem 1.25rem;
-  background-color: bisque;
   margin: 1rem;
 }
 .menu__entete .menu .menu-item::before {
@@ -518,7 +535,6 @@ pre {
   padding-inline: 0;
   margin-inline-end: 0;
 }
-
 .blocflex {
   display: flex;
   justify-content: space-between;
@@ -546,6 +562,13 @@ pre {
   flex: 1 0 100%;
 }
 
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 3rem;
+}
+
 .recherche__bouton {
   background-color: rgb(175, 212, 227);
   border: 0.2em solid rgb(208, 137, 51);
@@ -555,6 +578,11 @@ pre {
 .recherche__input {
   background-color: ghostwhite;
   padding: 0.2em;
+}
+
+.burger {
+  width: 3rem;
+  cursor: pointer;
 }
 
 /* --------------------------------------------- layout */

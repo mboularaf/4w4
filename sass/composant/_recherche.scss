@@ -1,4 +1,11 @@
 .recherche__section{}
+
+.recherche {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height : 3rem;
+}
 .recherche__bouton{
     background-color: rgb(175, 212, 227);
     border: 0.2em solid rgb(208, 137, 51);
