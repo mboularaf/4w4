@@ -18,16 +18,20 @@ $nouvel_class="";
         <section class="entete__nav">
             <?php the_custom_logo(); ?> 
             <div class="menu__recherche">
+            <input type="checkbox" id="chkburger">
                 <?php  wp_nav_menu(array( 
                                 "menu" => "entete",
                                 "container" => "nav",
                                 "container_class" => "menu__entete"
 
                             )); ?>
-                <button class="burger" ><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32"></button>            
+                            
                 <?= get_search_form(); ?>  
-
-            </div>         
+                
+                <label class="burger" for="chkburger">
+                    <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32"></button>
+                </label>
+                </div>         
         </section>
         <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>

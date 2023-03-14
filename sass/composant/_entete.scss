@@ -1,89 +1,108 @@
-.entete__nav{
+.entete__nav{ // logo, menu, form de recherche, bouton burger
      display : flex;
     justify-content: space-between;
     align-items: center;
     
-/*.navi{
-    display: flex;       
-}
-    /*.recherche{ 
-        position:absolute;
-        top:1rem;
-        left:98rem;
-    }*/
+
     
 }
 .site__titre{
-    text-decoration: none;
+    font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
     color: rgb(206, 49, 49);
-    //display: flex;
     padding:1rem;
-    h1{
-        font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
-       
-        
+    font-family: 'Russo One', sans-serif;
+  
         a{
            text-decoration: none;
            
         }
-    }
       
 }
  
 .custom-logo{
     border-radius: 50%;
-    //position: absolute;
-    //box-shadow: ;
     padding: 1rem;
 }
 
-.menu__recherche {
+.menu__recherche { // menu, form de recherche, bouton
     display:flex;
-  
     flex-direction: column-reverse;
+    align-items: flex-end;
     @media screen and (min-width:$largeur__bureau) {
         flex-direction: row;
         align-items: center;
+        justify-content: flex-end;
         
     }
 }
 /* ///////////////////////////////// menu__entete */
 .menu__entete{ //nav
-    
-    .menu{
+    /*position: absolute;
+    top: 100px;
+    right: 0;*/
+    transform : translateX(100%);
+    transition: transform .5s;
+    @media screen and (min-width:$largeur__tablette) {
+        //position: static;
+        transform: translateX(0);
+    }
+    .menu{ // ul
         display: flex;
-        transform : translateX(100%);
+        flex-direction: column;
+        align-items: flex-end;
         list-style-type: none;
-        justify-content: flex-end;
-        flex-direction: column; 
-        right: 0;
-        padding-top: 1rem;
-        @media screen and (min-width : $largeur__bureau) {
+        @media screen and (min-width : $largeur__tablette) {
            flex-direction: row; 
-           transform : translateX(0);
+           align-items: center;
+           
         }
-       .menu-item{
-        a{
-            padding: 1rem;
-            //box-shadow: 0.6rem 0.9rem 1.25rem;//10px 15px 20px
-            //background-color: bisque;
-            margin: 1rem;
-            
-         }
-       }
-
-        .menu-item::before{
-            content: "";
+       
+        .menu-item{
+                a{
+                    
+                    //box-shadow: 0.6rem 0.9rem 1.25rem;//10px 15px 20px
+                    //background-color: bisque;
+                    
+                    display:block;
+                    padding: 3px 5px;
+                    text-decoration: none;
+                    
+                }
+        }
+    }
+    /*---------------------------------------- pour annuler les bullets ---*/
+    .menu .menu-item::before {
+        content: "";
+        background: transparent;
+        border-radius: 0;
+        padding-inline: 0;
+        margin-inline-end: 0;
+        width: 0;
+        height: 0;
+          }
+          ul li li::before
+          {
             background: transparent;
-            border-radius: 0;//.5rem
-            padding-inline: 0;//.3rem;
-            margin-inline-end: 0;//.3rem
-          
-        }
-
-    }
-    @media screen and (min-width:$largeur__bureau) {
+            content: "";
+          }
+       
         
+   
+    
+}
+ /*---------------------------------------------------------------------------- bouton burger */
+.burger{
+    border: 1px solid #aaa;
+    display:block;
+    @media screen and (min-width:$largeur__tablette) {
+        display: none;
     }
+
+}
+#chkburger:checked ~ .menu__entete{
+ transform: translate(0);
+}
+#chkburger{
+    display:none;
     
 }
