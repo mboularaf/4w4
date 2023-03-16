@@ -5,6 +5,9 @@
                                 "container_class" => "menu__entete"
 
                             )); ?>
+                            <span class="material-symbols-outlined">
+mail
+</span>
 </footer>
         <?php wp_footer(); ?>
 </body>

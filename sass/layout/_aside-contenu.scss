@@ -27,6 +27,10 @@ Mise en page générale avec display:grid
   grid-area: aside;
   // padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: rgb(139, 228, 173);
+  h3{
+    margin: 1em;
+    padding: 1em;
+  }
 }
 
 
@@ -61,3 +65,4 @@ Mise en page générale avec display:grid
       "footer";
       }
 }
+

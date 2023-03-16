@@ -3,6 +3,8 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
+    height: 100%;
     .site__description{
         font-family: "Slackey", cursive;
     }
@@ -11,14 +13,10 @@ body{
         flex-direction: column;
         align-items: center;
         padding: 1rem;
-        background-color: rgb(172, 41, 41);
+        background-color: #007FFF;
         height: auto;
         
      
-    }
-    .site__footer{
-        color:white;
-
     }
     
 
