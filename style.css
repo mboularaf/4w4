@@ -470,26 +470,15 @@ pre {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*.navi{
-      display: flex;       
-  }
-      /*.recherche{ 
-          position:absolute;
-          top:1rem;
-          left:98rem;
-      }*/
 }
 
 .site__titre {
-  text-decoration: none;
+  font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
   color: rgb(206, 49, 49);
   padding: 1rem;
   font-family: "Russo One", sans-serif;
 }
-.site__titre h1 {
-  font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
-}
-.site__titre h1 a {
+.site__titre a {
   text-decoration: none;
 }
 
@@ -522,7 +511,6 @@ pre {
 }
 @media screen and (min-width: 800px) {
   .menu__entete {
-    position: static;
     transform: translateX(0);
   }
 }
@@ -531,27 +519,20 @@ pre {
   flex-direction: column;
   align-items: flex-end;
   list-style-type: none;
-  /* @media screen and (min-width : $largeur__tablette) {
-      flex-direction: row; 
-      align-items: center;
-      transform : translateX(0);
-   }*/
+}
+@media screen and (min-width: 800px) {
+  .menu__entete .menu {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .menu__entete .menu .menu-item a {
   display: block;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 3px 5px;
   text-decoration: none;
 }
 .menu__entete .menu .menu-item::before {
   content: "";
-  background: transparent;
-  border-radius: 0;
-  padding-inline: 0;
-  margin-inline-end: 0;
-}
-.menu__entete .menu__entete .menu .menu__item::before {
-  content: "-";
   background: transparent;
   border-radius: 0;
   padding-inline: 0;
@@ -631,6 +612,77 @@ pre {
 .burger {
   width: 3rem;
   cursor: pointer;
+}
+
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  flex: 1 0 40px;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+.menu-cours-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a p {
+    display: block;
+  }
+}
+
+.site__footer {
+  display: flex;
+  align-items: center;
+}
+.site__footer .menu__entete {
+  /*position: absolute;
+  top: 100px;
+  right: 0;*/
+  transform: translateX(100%);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 800px) {
+  .site__footer .menu__entete {
+    transform: translateX(0);
+  }
+}
+.site__footer .menu__entete .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style-type: none;
+}
+@media screen and (min-width: 800px) {
+  .site__footer .menu__entete .menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.site__footer .menu__entete .menu .menu-item a {
+  display: block;
+  padding: 3px 5px;
+  text-decoration: none;
 }
 
 /* --------------------------------------------- layout */
