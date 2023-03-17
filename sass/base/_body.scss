@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    width: fit-content;
+    width: fit-content; //rempli le conteneur
     height: 100%;
     
     .site__description{
@@ -18,7 +18,9 @@ body{
         height: auto;
         width: fit-content;
         height: 100%;
-     
+      .titre__main{
+        color:beige;
+      }
     }
     
 

@@ -1,6 +1,7 @@
 <?php 
 /** 
- * index.php est le modèle par défaut du thème 4w4
+ * front-page.php est le modèle par défaut utilisé 
+ * pour afficher la page d'accueil avec les cours 
 */
 ?>
 <?php 
@@ -11,9 +12,10 @@
 <?php get_header(); ?>
     <main class="site__main">
       
-        <h1>Bienvenue sur 4W4</h1>
+        <h1 class="titre__main">Bienvenue sur 4W4</h1>
         <section class="blocflex">
-            <?php if(have_posts()):
+            <?php /*Boucle pour pouvoir créer des articles identiques et mettre une galerie fonctionnelle*/
+                if(have_posts()): 
                 while (have_posts()): the_post(); 
                     $la_categorie = 'note-4w4';
                     if (in_category('galerie')){

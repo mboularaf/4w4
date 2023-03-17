@@ -11,7 +11,7 @@
 <?php get_header();?>
 
     <main>
-        <h1>Bienvenue sur 4W4</h1>
+        <h1 class="titre__main">Bienvenue sur 4W4</h1>
         <?php 
         if (have_posts()):
                 while(have_posts()):
