@@ -375,11 +375,10 @@ p {
 }
 
 body {
-  background-color: rgb(205, 33, 33);
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  width: fit-content;
   height: 100%;
 }
 body .site__description {
@@ -392,6 +391,8 @@ body main {
   padding: 1rem;
   background-color: #007FFF;
   height: auto;
+  width: fit-content;
+  height: 100%;
 }
 
 a {
@@ -459,17 +460,13 @@ ul li li::before {
 /*li> ol{}
 li > ul {}
 */
-pre {
-  background-color: #333;
-  color: white;
-  overflow: scroll;
-}
-
 /* --------------------------------------------- composant */
 .entete__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  object-fit: fill;
+  background-color: #b5e2ff;
 }
 
 .site__titre {
@@ -477,6 +474,9 @@ pre {
   color: #1A2B3C;
   padding: 1rem;
   font-family: "Russo One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .site__titre a {
   text-decoration: none;
@@ -502,9 +502,8 @@ pre {
 
 /* ///////////////////////////////// menu__entete */
 .menu__entete {
-  /*position: absolute;
-  top: 100px;
-  right: 0;*/
+  right: 0;
+  overflow: hidden;
   transform: translateX(200%);
   transition: transform 0.5s;
   /*---------------------------------------- pour annuler les bullets ---*/
@@ -654,6 +653,8 @@ pre {
 .site__footer {
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .site__footer .menu__entete {
   /*position: absolute;
@@ -682,7 +683,7 @@ pre {
 }
 .site__footer .menu__entete .menu .menu-item a {
   display: block;
-  padding: 3px 5px;
+  padding: 1em 1em;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
@@ -699,7 +700,7 @@ Mise en page générale avec display:grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
+  background-color: #b5e2ff;
 }
 
 .site__main {

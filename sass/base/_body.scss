@@ -1,10 +1,11 @@
 body{
-    background-color: rgb(205, 33, 33);
+    //background-color: rgb(205, 33, 33);
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
+    width: fit-content;
     height: 100%;
+    
     .site__description{
         font-family: "Slackey", cursive;
     }
@@ -15,7 +16,8 @@ body{
         padding: 1rem;
         background-color: #007FFF;
         height: auto;
-        
+        width: fit-content;
+        height: 100%;
      
     }
     
