@@ -9,20 +9,23 @@
 */
 ?>
 <footer class="site__footer">
-<section>
-        <?php the_custom_logo() //chercher le logo ?>
+        <section class="logo__footer">
+                <?php the_custom_logo() //chercher le logo ?>
 
 
-        
-</section>
-<?php 
-/*tableau qui permet de retourner une des valeurs  */
-        wp_nav_menu(array( 
-                                "menu" => "entete",
-                                "container" => "nav",
-                                "container_class" => "menu__entete"
+                
+        </section>
+        <section class="menu__footer">
+                <?php 
 
-                            )); ?>
+        /*tableau qui permet de retourner une des valeurs  */
+                wp_nav_menu(array( 
+                                        "menu" => "entete",
+                                        "container" => "nav",
+                                        "container_class" => "menu__entete"
+
+                                )); ?>
+        </section>
                             
 </footer>
         <?php wp_footer(); ?>

@@ -3,8 +3,8 @@
  * template part gabarit categorie-cours permet d'afficher un article bloc 
  * qui s'intégre dans la liste des cours qu'accède avec category/cours
  *   
- */ $titre =get_the_title();
-    $sigle = substr($titre, 0, 7);
+ */ $titre =get_the_title(); //cherche le titre
+    $sigle = substr($titre, 0, 7); //plus précis on a juste retiré 7 caractère du sigle
     $titre_long = substr($titre, 7, -5);//plus précis on a juste retiré 5 caractère
     $duree = substr($titre, strpos($titre, '('));//faire ca par moi le nombre d'heure pour chacun des cours
 ?>

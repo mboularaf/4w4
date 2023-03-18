@@ -1,8 +1,15 @@
 .site__footer{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     height: 100%;
+    background-color: #0080ff;
+    @media screen and (min-width:$largeur__tablette){
+        .menu__footer{
+            
+            width: fit-content;
+        }
+    }
 
     
     .menu__entete{ //nav
@@ -42,5 +49,6 @@
                     }
             }
         }
+
     }
 }

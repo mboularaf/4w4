@@ -1,5 +1,4 @@
-.recherche__section{}
-
+/*recherche */
 .recherche {
     display: flex;
     flex-wrap: nowrap;
@@ -8,9 +7,8 @@
 }
 .recherche__bouton{
     background-color: rgb(175, 212, 227);
-    border: 0.2em solid rgb(208, 137, 51);
+    border: 0.2em solid rgb(47, 157, 148);
     padding: 0.2em;
-
 }
 .recherche__input{
     background-color: ghostwhite;

@@ -69,6 +69,7 @@ hr {
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+  margin:3em;
 }
 
 /* Text-level semantics
@@ -329,12 +330,14 @@ h1 {
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  margin-left: 1em;
+    
 }
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
   padding: 1em;
-  margin: 1em;
+  
 }
 
 h4 {
@@ -361,6 +364,7 @@ h1 {
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   /* font-family: "Slackey", cursive; */
+    margin-left: 1em;
 }
 
 h4,
@@ -368,10 +372,12 @@ h5,
 h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0.5rem 0;
+  color: #c7f6e6;
 }
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #091b42;
 }
 
 body {
@@ -396,14 +402,13 @@ body main {
 }
 
 a {
-  color: orange;
   text-decoration: none;
 }
 a:active, a:focus {
   color: blue;
 }
 a:visited {
-  color: rgb(0, 145, 255);
+  color: rgb(2 5 7);
 }
 a:hover {
   color: rgb(235, 55, 0);
@@ -547,8 +552,8 @@ li > ul {}
 
 /*---------------------------------------------------------------------------- bouton burger */
 .burger {
-  border: 1px solid #aaa;
   display: block;
+  
 }
 @media screen and (min-width: 800px) {
   .burger {
@@ -710,12 +715,12 @@ Mise en page générale avec display:grid
 
 .site__footer {
   grid-area: footer;
-  background-color: rgb(10, 42, 80);
+  background-color: #213f77;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(139, 228, 173);
+  background-color: rgb(160 139 228);
 }
 .site__aside h3 {
   margin: 1em;

@@ -10,11 +10,13 @@
 }
 .site__titre{
     font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
-    color: #1A2B3C;
+    //color: #1A2B3C;
     padding:1rem;
     font-family: 'Russo One', sans-serif;
     display: flex; align-items: center; 
     justify-content: center;
+    animation: vibration 2s ease 0s 3 normal forwards;
+    
    
   
         a{
@@ -27,7 +29,36 @@
 .custom-logo{
     border-radius: 50%;
     padding: 1rem;
+    
 }
+@keyframes vibration {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
 
 .menu__recherche { // menu, form de recherche, bouton
     display:flex;
@@ -71,7 +102,7 @@
                     //background-color: bisque;
                     
                     display:block;
-                    padding: 3px 5px;
+                    padding: 0.6rem 0.9rem;
                     text-decoration: none;
                     font-family: 'Roboto', sans-serif;
                     
@@ -100,8 +131,10 @@
 }
  /*---------------------------------------------------------------------------- bouton burger */
 .burger{
-    border: 1px solid #aaa;
+    
     display:block;
+    border:1px solid red;
+
     @media screen and (min-width:$largeur__tablette) {
         display: none;
     }

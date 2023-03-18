@@ -7,5 +7,5 @@
 ?>
 
 <article class="blocflex__galerie">
-    <?php the_content(); ?>
+    <?php the_content();//le contenu ?>
 </article>
