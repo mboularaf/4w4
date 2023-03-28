@@ -385,6 +385,10 @@ body {
 body .site__description {
   font-family: "Slackey", cursive;
 }
+body p {
+  margin: 1em;
+}
+
 a {
   color: black;
   text-decoration: none;
