@@ -13,7 +13,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 4w4 Mohamed Boularaf
 */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* variables pour les différentes tailles d'écrans*/ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -69,7 +69,6 @@ hr {
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-  margin:3em;
 }
 
 /* Text-level semantics
@@ -331,13 +330,12 @@ h1 {
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
   margin-left: 1em;
-    
 }
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
-  padding: 1em;
-  
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 h4 {
@@ -364,7 +362,6 @@ h1 {
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   /* font-family: "Slackey", cursive; */
-    margin-left: 1em;
 }
 
 h4,
@@ -372,12 +369,10 @@ h5,
 h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0.5rem 0;
-  color: #c7f6e6;
 }
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #091b42;
 }
 
 body {
@@ -390,25 +385,15 @@ body {
 body .site__description {
   font-family: "Slackey", cursive;
 }
-body main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background-color: #007FFF;
-  height: auto;
-  width: fit-content;
-  height: 100%;
-}
-
 a {
+  color: black;
   text-decoration: none;
 }
 a:active, a:focus {
   color: blue;
 }
 a:visited {
-  color: rgb(2 5 7);
+  color: rgb(0, 4, 7);
 }
 a:hover {
   color: rgb(235, 55, 0);
@@ -452,19 +437,11 @@ ul li li::before {
   background: transparent;
 }
 
-/*ul li::before { 
-    content: ""; 
-    position: absolute; 
-    top: 1.2em; 
-    left: -30px; 
-    margin-top: -.9em;
-    background: linear-gradient(45deg, #9986ce, #f9dd94);
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;}*/
-/*li> ol{}
-li > ul {}
-*/
+code {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
 /* --------------------------------------------- composant */
 .entete__nav {
   display: flex;
@@ -476,12 +453,12 @@ li > ul {}
 
 .site__titre {
   font-size: clamp(1rem, 0.5909rem + 1.6364vw, 3.25rem);
-  color: #1A2B3C;
   padding: 1rem;
   font-family: "Russo One", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: vibration 2s ease 0s 3 normal forwards;
 }
 .site__titre a {
   text-decoration: none;
@@ -492,6 +469,29 @@ li > ul {}
   padding: 1rem;
 }
 
+@keyframes vibration {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
 .menu__recherche {
   display: flex;
   flex-direction: column-reverse;
@@ -532,7 +532,7 @@ li > ul {}
 }
 .menu__entete .menu .menu-item a {
   display: block;
-  padding: 3px 5px;
+  padding: 0.6rem 0.9rem;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
@@ -553,7 +553,7 @@ li > ul {}
 /*---------------------------------------------------------------------------- bouton burger */
 .burger {
   display: block;
-  
+  border: 1px solid red;
 }
 @media screen and (min-width: 800px) {
   .burger {
@@ -596,6 +596,7 @@ li > ul {}
   flex: 1 0 100%;
 }
 
+/*recherche */
 .recherche {
   display: flex;
   flex-wrap: nowrap;
@@ -605,7 +606,7 @@ li > ul {}
 
 .recherche__bouton {
   background-color: rgb(175, 212, 227);
-  border: 0.2em solid rgb(208, 137, 51);
+  border: 0.2em solid rgb(47, 157, 148);
   padding: 0.2em;
 }
 
@@ -658,8 +659,14 @@ li > ul {}
 .site__footer {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: fit-content;
   height: 100%;
+  background-color: #0080ff;
+}
+@media screen and (min-width: 800px) {
+  .site__footer .menu__footer {
+    width: fit-content;
+  }
 }
 .site__footer .menu__entete {
   /*position: absolute;
@@ -693,6 +700,7 @@ li > ul {}
   font-family: "Roboto", sans-serif;
 }
 
+/*article simple */
 .single-php {
   background-color: #74D0F1;
   width: 100%;
@@ -710,17 +718,24 @@ Mise en page générale avec display:grid
 
 .site__main {
   grid-area: main;
-  background-color: rgb(144, 177, 218);
+  background-color: rgb(129, 161, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: auto;
+  height: auto;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #213f77;
+  width: 100%;
+  background-color: #0080ff;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(160 139 228);
+  background-color: rgb(160, 139, 228);
 }
 .site__aside h3 {
   margin: 1em;
@@ -729,6 +744,7 @@ Mise en page générale avec display:grid
 
 .site {
   display: grid;
+  width: 100%;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
 }

@@ -10,7 +10,7 @@
 ?>
 <?php get_header();?>
 
-    <main>
+    <main class="site__main">
         <h1 class="titre__main">Bienvenue sur 4W4</h1>
         <?php 
         if (have_posts()):

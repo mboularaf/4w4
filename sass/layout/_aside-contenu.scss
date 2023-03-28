@@ -15,10 +15,18 @@ Mise en page générale avec display:grid
   grid-area: main;
   // padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: rgb(129 161 200);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: auto;
+  height: auto;
 }
+
 
 .site__footer{
   grid-area: footer;
+  width : 100%;
   // padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: #0080ff;
 }
@@ -36,6 +44,7 @@ Mise en page générale avec display:grid
 
 .site {
   display: grid;
+  width : 100%;
   grid-template-columns: auto;
   grid-template-areas:
     "header"
