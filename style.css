@@ -336,6 +336,7 @@ h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
   padding: 0.5rem;
   margin: 0.5rem;
+  font-family: "Slackey", cursive;
 }
 
 h4 {
@@ -626,12 +627,12 @@ code {
 
 .menu-cours-container .menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu {
-    flex-direction: column;
+    flex-direction: row; 
     justify-content: flex-start;
   }
 }

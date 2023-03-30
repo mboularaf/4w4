@@ -54,7 +54,7 @@ Mise en page générale avec display:grid
     "footer";
   //row-gap: 50px;
   @media screen and (min-width:$largeur__bureau) {
-      grid-template-columns: 20% auto; 
+      grid-template-columns: 0 auto; 
       grid-template-areas:
       "header header"
       "aside main"
@@ -74,9 +74,4 @@ Mise en page générale avec display:grid
       "main"
       "footer";
       }
-}
-.site__main__404{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
