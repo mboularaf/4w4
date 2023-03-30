@@ -27,11 +27,11 @@ ol li{
     margin:.5rem 0rem;
 }
 ul   li::before {
-    content: "-";
+    /*content: "-";
     background: lightgray;
     border-radius: .5rem;
     padding-inline: .3rem;
-    margin-inline-end: .3rem;
+    margin-inline-end: .3rem;*/
       }
       ul li li::before
       {

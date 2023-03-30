@@ -387,7 +387,9 @@ body .site__description {
   font-family: "Slackey", cursive;
 }
 body p {
-  margin: 1em;
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -431,11 +433,11 @@ ol li {
 }
 
 ul li::before {
-  content: "-";
+  /*content: "-";
   background: lightgray;
-  border-radius: 0.5rem;
-  padding-inline: 0.3rem;
-  margin-inline-end: 0.3rem;
+  border-radius: .5rem;
+  padding-inline: .3rem;
+  margin-inline-end: .3rem;*/
 }
 
 ul li li::before {
@@ -610,8 +612,8 @@ code {
 }
 
 .recherche__bouton {
-  background-color: rgb(175, 212, 227);
-  border: 0.2em solid rgb(47, 157, 148);
+  background-color: rgb(184, 189, 191);
+  border: rgb(205, 205, 205);
   padding: 0.2em;
 }
 
@@ -627,15 +629,17 @@ code {
 
 .menu-cours-container .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 1000px){
   .menu-cours-container .menu {
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: flex-start;
-  }
 }
+}
+
 .menu-cours-container .menu .menu-item {
   flex: 1 0 40px;
 }
@@ -660,7 +664,6 @@ code {
     display: block;
   }
 }
-
 
 .site__footer {
   display: flex;
@@ -756,7 +759,7 @@ Mise en page générale avec display:grid
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 20% auto;
+    grid-template-columns: 0 auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }

@@ -15,7 +15,7 @@ $nouvel_class="";
  if (is_front_page()) {
     $nouvel_class = "no-aside";
  }?>
-<body class='site <?= $nouvel_class ?> '>
+<body class='custom-background site  <?= $nouvel_class ?> '>
 <header class="site__entete">
         <section class="entete__nav">
             <?php the_custom_logo(); ?> 
@@ -39,7 +39,7 @@ $nouvel_class="";
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>
 </header>
 <?php 
-if (!is_404() && is_front_page()){
+if (!is_404() || is_front_page()){
     get_template_part("template-parts/aside"); 
 }
 
