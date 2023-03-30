@@ -39,7 +39,7 @@ $nouvel_class="";
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>
 </header>
 <?php 
-if (! is_front_page()){
+if (!is_404() && is_front_page()){
     get_template_part("template-parts/aside"); 
 }
 
