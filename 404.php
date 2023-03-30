@@ -9,12 +9,12 @@
 */
 ?>
 <?php get_header();?>
- 
+     
     <main class="site__main">
         <h1>Erreur 404</h1>
             <h3>Page introuvable, vous pouvez tentez une recherche<h3>
             <?= get_search_form(); ?>
-        <h6>Nos choix de cours</h6>
+        <h3>Nos choix de cours</h3>
         <?php 
         $menu = "cours"; 
         if(in_category('note-4w4')){ $menu = "note-4w4";}
@@ -25,7 +25,7 @@
             "container"=>"nav"
         ))
         ?>
-        <h6>Les notes de cours</h6>
+        <h3>Les notes de cours</h3>
         <?php 
         $menu = "note-4w4"; 
         if(in_category('cours')){ $menu = "cours";}

@@ -12,6 +12,16 @@ body{
     p{
         margin: 1em;
     }
+    menu{
+       display: block;
+
+        @media screen and (min-width:$largeur__bureau) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            
+        }
+    }
     
 
 
