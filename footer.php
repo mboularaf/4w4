@@ -9,23 +9,24 @@
 */
 ?>
 <footer class="site__footer">
-        <section class="logo__footer">
-                <?php the_custom_logo() //chercher le logo ?>
 
-
-                
-        </section>
-        <section class="menu__footer">
-                <?php 
-
-        /*tableau qui permet de retourner une des valeurs  */
-                wp_nav_menu(array( 
-                                        "menu" => "entete",
-                                        "container" => "nav",
-                                        "container_class" => "menu__entete"
-
-                                )); ?>
-        </section>
+       
+               <section class="footer_co1">
+                <div class="sidebar">
+                        <?php dynamic_sidebar( 'footer_1' ); ?>
+                </div>
+                </section> 
+                <section class="footer_co2">
+                <div class="sidebar">
+                        <?php dynamic_sidebar( 'footer_2' ); ?>
+                </div>
+                </section> 
+                <section class="footer_co3">
+                <div class="sidebar">
+                        <?php dynamic_sidebar( 'footer_3' ); ?>
+                </div>
+                </section> 
+        
                             
 </footer>
         <?php wp_footer(); ?>
