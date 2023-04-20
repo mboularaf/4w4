@@ -73,7 +73,7 @@ function perso_menu_item_title($title, $item, $args) {
     return $title;
     }
     add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);  //filtrer navigation et perso item
-    /*--------------------------------------------------------------------------------------- enregistrement des widgets */
+    /*--------------------------------------------------------------------------------------- Enregistrement des widgets */
     // Enregistrer le sidebar
 function enregistrer_sidebar() {
     register_sidebar( array(

@@ -1,16 +1,25 @@
-/*recherche */
+
 .recherche {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    height : 3rem;
+    height: 3rem;
+    outline: none;
+    //border : 0.5rem solid #aaa;
 }
-.recherche__bouton{
-    background-color: rgb(175, 212, 227);
-    border: 0.2em solid rgb(47, 157, 148);
-    padding: 0.2em;
-}
+
 .recherche__input{
-    background-color: ghostwhite;
-    padding: 0.2em;
+    background-color: rgba(0, 0, 150, 0.1);
+    outline: none;
+    border : none;
+    font-size: 1.5rem;
+}
+.recherche__icone {
+    //padding : 4px;
+    display : block;
+}
+.recherche__bouton {
+    background-color: rgba(0, 0, 150, 0.1); 
+    border : none;
+    padding : 5.5px;
 }

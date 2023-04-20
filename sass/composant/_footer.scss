@@ -4,51 +4,14 @@
     width: fit-content;
     height: 100%;
     background-color: #0080ff;
+    .conteneur_video{
+            margin:1rem;
+    }
     @media screen and (min-width:$largeur__tablette){
-        .menu__footer{
-            
-            width: fit-content;
-        }
+       
     }
 
     
-    .menu__entete{ //nav
-        /*position: absolute;
-        top: 100px;
-        right: 0;*/
-        transform : translateX(100%);
-        transition: transform .5s;
-        @media screen and (min-width:$largeur__tablette) {
-            //position: static;
-            transform: translateX(0);
-        }
-        .menu{ // ul
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            list-style-type: none;
-            @media screen and (min-width : $largeur__tablette) {
-               flex-direction: row; 
-               align-items: center;
-               justify-content: center;
-               
-            }
-            
-           
-            .menu-item{
-                    a{
-                        
-                        //box-shadow: 0.6rem 0.9rem 1.25rem;//10px 15px 20px
-                        //background-color: bisque;
-                        
-                        display:block;
-                        padding: 1em 1em;
-                        text-decoration: none;
-                        font-family: 'Roboto', sans-serif;
-                        
-                    }
-            }
-        }
-
-    }
+    
+    
 }
