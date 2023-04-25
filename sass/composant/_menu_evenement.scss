@@ -1,0 +1,18 @@
+.menu__evenement{//nav
+    background-color:transparent;
+    .menu{//ul
+        display: flex;
+        justify-content: space-between;
+        .menu-item{//li
+            display: flex;
+            flex-direction:column;
+            border: 2px solid rgb(58, 100, 237);
+            height: 100%;
+            margin: 20px;
+            height: 100%;
+            padding: 1em;
+
+
+        }
+    }
+}

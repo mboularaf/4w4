@@ -13,6 +13,14 @@
     <main class="site__main">
       
         <h1 class="titre__main">Bienvenue sur 4W4</h1>
+        <h2>Les Événements à venir </h2>
+        <section class="blocflex">
+            <?php  wp_nav_menu(array( 
+                                    "menu" => "evenement",
+                                    "container" => "nav",
+                                    "container_class" => "menu__evenement"
+                                )); ?>
+        </section>
         <section class="blocflex">
             <?php /*Boucle pour pouvoir créer des articles identiques et mettre une galerie fonctionnelle*/
                 if(have_posts()): 
@@ -23,6 +31,7 @@
                     get_template_part("template-parts/categorie",$la_categorie);
                endwhile; 
              endif; ?>
+             
         </section>
     </main>
 <?php get_footer(); ?>  
