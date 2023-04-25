@@ -691,9 +691,6 @@ code {
   justify-content: center;
   align-items: center;
 }
-.site__footer .footer_col .widget-title {
-  position: absolute;
-}
 @media screen and (min-width: 800px) {
   .site__footer .footer_col {
     width: 100%;
