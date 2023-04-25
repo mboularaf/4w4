@@ -4,7 +4,10 @@
 
 ####    Objectifs
 - Intégrés 3 différents widgets
-- Design du footer 
+- Design du footer
+- Mettre le logo dans le footer
+- Essayer de rendre le site adaptatif 
+
 #### Liens de référence 
 - Mon site sur site ground
     - https://cidweb24.sg-host.com/
