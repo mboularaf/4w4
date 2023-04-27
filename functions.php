@@ -31,6 +31,8 @@ add_theme_support( 'custom-logo', array(
     'width'  => 150
 ) );
 add_theme_support('custom-background');
+add_theme_support('post-thumbnails');
+
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
  * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal

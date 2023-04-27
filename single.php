@@ -16,8 +16,8 @@
         if (have_posts()):
                 while(have_posts()):
                     the_post();//extrait un objet "post"?>
-                    <article class="single-php">
-                        <h3><?php the_title();//afficher le titre du post?></h3></a> 
+                    <article class="article__single">
+                        <h3><?php the_post_thumbnail('medium');?><?php the_title();//afficher le titre du post?></h3></a> 
                         <?php the_content();//afficher le contenu ?>
                     </article>
                     <hr>

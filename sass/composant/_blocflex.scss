@@ -15,6 +15,9 @@
  border: 3px solid rgb(218, 52, 52);
  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
  color: #FFFDD0;
+ justify-content: center;
+ text-align: center;
+ 
 }
 .blocflex__article:hover{
     background-color: rgb(77, 102, 172);
@@ -22,4 +25,15 @@
 }
 .blocflex__galerie{
     flex: 1 0 100%;
+}
+.blocflex__figure{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img{
+        display: block;
+        width: 150px;
+    }
+
 }

@@ -1,5 +1,15 @@
 /*article simple */
-.single-php{
+.article__single{
     background-color: #74D0F1;
     width: 100%;
+    h3{
+        display: flex;
+        align-items: center;
+        img{
+            margin:5px;
+        }
+    } 
+    @media screen and (min-width:$largeur__tablette) {
+        
+    }
 }

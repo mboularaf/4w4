@@ -9,7 +9,7 @@ html{
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: #b5e2ff;
+  background-color: rgba(0,0,0,0.2);
  
   }
 
@@ -46,6 +46,8 @@ html{
 
 
 .site {
+  margin : 0 auto;
+  width : 80%;
   display: grid;
   max-width: 100vw;
   overflow-x: hidden;
