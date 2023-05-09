@@ -794,14 +794,38 @@ main.erreur404 .recherche input {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 1000px) {
+  .menu__evenement .menu {
+    height: auto;
+    width: auto;
+  }
+}
 .menu__evenement .menu .menu-item {
-  display: flex;
-  flex-direction: column;
   border: 2px solid rgb(58, 100, 237);
-  height: 100%;
+  flex: 1 0 100%;
   margin: 20px;
   height: 100%;
   padding: 1em;
+}
+.menu__evenement .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.menu__evenement .menu .menu-item a .title {
+  font-size: 2rem;
+}
+.menu__evenement .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+.menu__evenement .menu .menu-item:hover {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* --------------------------------------------- layout */

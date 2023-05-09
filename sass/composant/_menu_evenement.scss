@@ -1,17 +1,42 @@
 .menu__evenement{//nav
     background-color:transparent;
+    
     .menu{//ul
         display: flex;
         justify-content: space-between;
+        @media screen and (min-width:1000px) {       
+            height: auto;
+            width: auto;
+        }
+        
         .menu-item{//li
-            display: flex;
-            flex-direction:column;
             border: 2px solid rgb(58, 100, 237);
-            height: 100%;
+            flex: 1 0 100%;
             margin: 20px;
             height: 100%;
             padding: 1em;
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                color : #333;
+                background-color: rgba(0,0,0,.05);
+                .title{
+                    font-size: 2rem;
+                }
+                .menu-thumbnail{
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            &:hover {
+                color : #333;
+                background-color: rgba(0,0,0,.1);
 
+            }
+             
 
         }
     }
