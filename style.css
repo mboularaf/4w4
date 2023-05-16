@@ -594,6 +594,7 @@ code {
 
 .blocflex__article {
   display: flex;
+  flex: 1 0 300px;
   flex-wrap: wrap;
   padding: 5px;
   margin: 10px;
@@ -847,18 +848,24 @@ main.erreur404 .recherche input {
 }
 
 .img__archive {
-  width: 80%;
+  width: 20%;
   height: 50px;
   object-fit: cover;
   background-image: no-repeat;
 }
 
-.archive__cours.img__archive {
+.archive__cours {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+  background-size: 5%;
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 0%;
 }
 
-.archive__4w4.img__archive {
+.archive__4w4 {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=briefcase");
+  background-size: 5%;
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 0%;
 }
 
 /* --------------------------------------------- layout */
