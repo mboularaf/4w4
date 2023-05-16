@@ -11,7 +11,7 @@ body{
     width: fit-content; //rempli le conteneur
     height: 100%;
     background-repeat: no-repeat;
-    
+    background-size: cover;
     .site__description{
         font-family: "Slackey", cursive;
     }
@@ -23,7 +23,3 @@ body{
 
 }
 
-body.custom-background{
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}

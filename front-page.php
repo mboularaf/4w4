@@ -17,7 +17,7 @@
         <h1 class="titre__main">Bienvenue sur 4W4</h1>
         
         <h2>Les Événements à venir </h2>
-        <section class="blocflex">
+        <section class="menu__evenement">
             <?php  wp_nav_menu(array( 
                                     "menu" => "evenement",
                                     "container" => "nav",
@@ -25,7 +25,7 @@
                                 )); ?>
         </section>
         <h2>Archive menu </h2>
-        <section class="blocflex">
+        <section class="menu__bloc-archive">
             <?php  wp_nav_menu(array( 
                                     "menu" => "bloc-archive",
                                     "container" => "nav",
