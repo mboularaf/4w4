@@ -1,9 +1,13 @@
-.menu__evenement{//nav
+.menu__evenement,
+.menu__bloc-archive{//nav
     background-color:transparent;
+    width: 100%;
+    height: 100%;
     
     .menu{//ul
         display: flex;
         justify-content: space-between;
+        
         @media screen and (min-width:1000px) {       
             height: auto;
             width: auto;
@@ -11,7 +15,6 @@
         
         .menu-item{//li
             border: 2px solid rgb(58, 100, 237);
-            flex: 1 0 100%;
             margin: 20px;
             height: 100%;
             padding: 1em;
@@ -40,4 +43,17 @@
 
         }
     }
+}
+.img__archive{
+ width: 80%;
+ height: 50px;
+ object-fit: cover;
+ background-image: no-repeat;
+
+}
+.archive__cours.img__archive{
+ background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+.archive__4w4.img__archive{
+ background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=briefcase");
 }

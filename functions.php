@@ -45,7 +45,7 @@ function cidweb_modifie_requete_principal( $query ) {
         && $query->is_main_query() // si requête principale
         && ! is_admin() ) { //si pas dans le tableau de bord
             // $query->set permet de modifier la requête principale
-      $query->set( 'category_name', 'note-4w4'); // filtre les articles de catégorie 4w4 slug
+      $query->set( 'category_name', 'accueil'); // filtre les articles de catégorie 4w4 slug (mettre accueil)
       $query->set( 'orderby', 'title' ); // trier selon le champ title
       $query->set( 'order', 'ASC' ); //trier en ordre ascendants
       }
@@ -81,13 +81,13 @@ function perso_menu_item_title($title, $item, $args) {
      * Ajouter la description et l'image mise en avant à chacun des choix du menu <<evenement>>
      */
     function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args ) {
-        if ( 'evenement' == $args->menu) {
+        if ( 'evenement' == $args->menu || 'bloc-archive' == $args->menu) {
             $post_thumbnail_id = get_post_thumbnail_id( $item->object_id );
             if ( $post_thumbnail_id ) {
                 $post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id, 'thumbnail' );
                 $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span><img src="' . esc_url( $post_thumbnail_url[0] ) . '" class="menu-thumbnail" />', $item_output );
             } else {
-                $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span>', $item_output );
+                $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span><figure class="img"></figure class>', $item_output );
             }
         }
         return $item_output;
@@ -124,6 +124,14 @@ function enregistrer_sidebar() {
         'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>',
     ) );
-    
+    register_sidebar( array(
+        'name' => __( 'Entete 1', 'nom-de-mon-theme' ),
+        'id' => 'entete_1',
+        'description' => __( 'Une zone de widget pour afficher des widgets dans la page accueil.', 'nom-de-mon-theme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );

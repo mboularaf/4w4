@@ -1,3 +1,8 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
 body{
     //background-color: rgb(205, 33, 33);
     display: flex;
@@ -5,6 +10,7 @@ body{
     position: relative;
     width: fit-content; //rempli le conteneur
     height: 100%;
+    background-repeat: no-repeat;
     
     .site__description{
         font-family: "Slackey", cursive;
@@ -15,4 +21,9 @@ body{
     background-image: transparent;
 
 
+}
+
+body.custom-background{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }

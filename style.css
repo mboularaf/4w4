@@ -375,12 +375,19 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
   position: relative;
   width: fit-content;
   height: 100%;
+  background-repeat: no-repeat;
   background-image: transparent;
 }
 body .site__description {
@@ -388,6 +395,11 @@ body .site__description {
 }
 body p {
   margin: 1em;
+}
+
+body.custom-background {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 a {
@@ -585,7 +597,8 @@ code {
 }
 
 .blocflex__article {
-  flex: 1 0 250px;
+  display: flex;
+  flex-wrap: wrap;
   padding: 5px;
   margin: 10px;
   border: 3px solid rgb(218, 52, 52);
@@ -787,27 +800,33 @@ main.erreur404 .recherche input {
   }
 }
 
-.menu__evenement {
+.menu__evenement,
+.menu__bloc-archive {
   background-color: transparent;
+  width: 100%;
+  height: 100%;
 }
-.menu__evenement .menu {
+.menu__evenement .menu,
+.menu__bloc-archive .menu {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (min-width: 1000px) {
-  .menu__evenement .menu {
+  .menu__evenement .menu,
+  .menu__bloc-archive .menu {
     height: auto;
     width: auto;
   }
 }
-.menu__evenement .menu .menu-item {
+.menu__evenement .menu .menu-item,
+.menu__bloc-archive .menu .menu-item {
   border: 2px solid rgb(58, 100, 237);
-  flex: 1 0 100%;
   margin: 20px;
   height: 100%;
   padding: 1em;
 }
-.menu__evenement .menu .menu-item a {
+.menu__evenement .menu .menu-item a,
+.menu__bloc-archive .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -815,36 +834,49 @@ main.erreur404 .recherche input {
   color: #333;
   background-color: rgba(0, 0, 0, 0.05);
 }
-.menu__evenement .menu .menu-item a .title {
+.menu__evenement .menu .menu-item a .title,
+.menu__bloc-archive .menu .menu-item a .title {
   font-size: 2rem;
 }
-.menu__evenement .menu .menu-item a .menu-thumbnail {
+.menu__evenement .menu .menu-item a .menu-thumbnail,
+.menu__bloc-archive .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
   height: 150px;
 }
-.menu__evenement .menu .menu-item:hover {
+.menu__evenement .menu .menu-item:hover,
+.menu__bloc-archive .menu .menu-item:hover {
   color: #333;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.img__archive {
+  width: 80%;
+  height: 50px;
+  object-fit: cover;
+  background-image: no-repeat;
+}
+
+.archive__cours.img__archive {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+
+.archive__4w4.img__archive {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=briefcase");
 }
 
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
 */
-html {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .site__main {
   grid-area: main;
+  overflow: hidden;
   background-color: rgb(129, 161, 200);
   display: flex;
   flex-direction: column;
@@ -871,7 +903,6 @@ html {
 
 .site {
   margin: 0 auto;
-  width: 80%;
   display: grid;
   max-width: 100vw;
   overflow-x: hidden;
@@ -880,7 +911,7 @@ html {
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 20% auto;
+    grid-template-columns: 25% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }
