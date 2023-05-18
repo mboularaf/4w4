@@ -750,10 +750,6 @@ code {
     width: 100%;
     height: 100%;
   }
-  .site__footer .footer__principal, .site__footer .footer__social {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .site__footer .footer_col {
   width: 100%;
@@ -889,7 +885,7 @@ main.erreur404 .recherche input {
 }
 .menu__evenement .menu .menu-item a .title,
 .menu__bloc-archive .menu .menu-item a .title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 0.4rem;
 }
 .menu__evenement .menu .menu-item a .menu-thumbnail,
@@ -900,7 +896,7 @@ main.erreur404 .recherche input {
 }
 .menu__evenement .menu .menu-item:hover,
 .menu__bloc-archive .menu .menu-item:hover {
-  color: rgb(29, 52, 200);
+  color: rgb(86, 89, 109);
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -965,7 +961,6 @@ Mise en page générale avec display:grid
 .site__footer {
   grid-area: footer;
   width: 100%;
-  background-color: #0080ff;
 }
 
 .site__aside {
