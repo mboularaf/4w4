@@ -611,7 +611,14 @@ code {
 }
 
 .blocflex__galerie {
-  flex: 1 0 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .blocflex__galerie {
+    flex: 1 0 100%;
+  }
 }
 
 .blocflex__figure {
