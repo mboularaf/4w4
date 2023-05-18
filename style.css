@@ -373,6 +373,7 @@ h6 {
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.1em;
 }
 
 html {
@@ -397,19 +398,24 @@ body .site__description {
 body p {
   margin: 1em;
 }
-
-a {
-  color: black;
+body .title {
+  font-size: 2em;
+}
+body h1 > a {
+  color: rgb(40, 59, 58);
   text-decoration: none;
+  font-size: 2em;
 }
-a:active, a:focus {
-  color: blue;
+body h2 {
+  color: rgb(58, 85, 84);
+  text-decoration: none;
+  font-size: 1.5em;
 }
-a:visited {
-  color: rgb(0, 4, 7);
+body h5 {
+  font-size: 1.25rem;
 }
-a:hover {
-  color: rgb(235, 55, 0);
+body figure p p {
+  font-size: 1.6rem;
 }
 
 ul,
@@ -462,6 +468,7 @@ code {
   justify-content: space-between;
   align-items: center;
   object-fit: fill;
+  margin-top: 1em;
 }
 
 .site__titre {
@@ -515,6 +522,7 @@ code {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 1rem;
   }
 }
 
@@ -541,13 +549,23 @@ code {
   .menu__entete .menu {
     flex-direction: row;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
+}
+.menu__entete .menu .menu-item {
+  border: 1px solid black;
+  background-color: lightblue;
 }
 .menu__entete .menu .menu-item a {
   display: block;
   padding: 0.6rem 0.9rem;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+}
+.menu__entete .menu .menu-item a:hover {
+  color: rgb(235, 55, 0);
+  background-color: black;
 }
 .menu__entete .menu .menu-item::before {
   content: "";
@@ -603,7 +621,6 @@ code {
   flex-direction: column;
   flex: 1 0 250px;
   flex-wrap: wrap;
-  padding: 5px;
   margin: 10px;
   border: 3px solid rgb(218, 52, 52);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -722,7 +739,11 @@ code {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #3478bc;
+  background-color: #518cc7;
+}
+.site__footer .footer__principal, .site__footer .footer__social {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 1000px) {
   .site__footer {
@@ -732,6 +753,10 @@ code {
     align-items: space-between;
     width: 100%;
     height: 100%;
+  }
+  .site__footer .footer__principal, .site__footer .footer__social {
+    display: flex;
+    flex-direction: column;
   }
 }
 .site__footer .footer_col {
@@ -869,6 +894,7 @@ main.erreur404 .recherche input {
 .menu__evenement .menu .menu-item a .title,
 .menu__bloc-archive .menu .menu-item a .title {
   font-size: 2rem;
+  padding: 0.4rem;
 }
 .menu__evenement .menu .menu-item a .menu-thumbnail,
 .menu__bloc-archive .menu .menu-item a .menu-thumbnail {
@@ -880,6 +906,10 @@ main.erreur404 .recherche input {
 .menu__bloc-archive .menu .menu-item:hover {
   color: rgb(29, 52, 200);
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  padding: 0.2em;
 }
 
 .img__archive {
@@ -895,12 +925,24 @@ main.erreur404 .recherche input {
   background-repeat: no-repeat;
   background-position: right 50% bottom 30%;
 }
+@media screen and (min-width: 1000px) {
+  .archive__cours {
+    background-size: 6%;
+    background-repeat: no-repeat;
+  }
+}
 
 .archive__4w4 {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=briefcase");
   background-size: 5%;
   background-repeat: no-repeat;
   background-position: right 50% bottom 30%;
+}
+@media screen and (min-width: 1000px) {
+  .archive__4w4 {
+    background-size: 6%;
+    background-repeat: no-repeat;
+  }
 }
 
 /* --------------------------------------------- layout */

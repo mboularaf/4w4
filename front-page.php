@@ -11,6 +11,7 @@
 ?>
 <?php get_header(); ?>
     <main class="site__main">
+    <h2 class="site__description"><?= bloginfo('description'); ?></h2>
     <div class="sidebar">
                 <?php dynamic_sidebar( 'entete_1' ); ?>
         </div>

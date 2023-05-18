@@ -27,6 +27,7 @@
                 background-color: rgba(0,0,0,.05);
                 .title{
                     font-size: 2rem;
+                    padding: 0.4rem;
                 }
                 .menu-thumbnail{
                     display: block;
@@ -44,6 +45,9 @@
         }
     }
 }
+.description{
+    padding: 0.2em;
+}
 .img__archive{
  width: 20%;
  height: 50px;
@@ -56,6 +60,12 @@
  background-size: 5%;
  background-repeat: no-repeat;
  background-position: right 50% bottom 30%;
+ @media screen and (min-width:1000px) {
+    background-size:6%;
+    background-repeat: no-repeat;
+    
+    
+ }
  
 }
 .archive__4w4{
@@ -63,4 +73,10 @@
  background-size: 5%;
  background-repeat: no-repeat;
  background-position: right 50% bottom 30%;
+ @media screen and (min-width:1000px) {
+    background-size:6%;
+    background-repeat: no-repeat;
+    
+    
+ }
 }

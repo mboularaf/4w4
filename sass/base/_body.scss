@@ -19,7 +19,27 @@ body{
         margin: 1em;
     }
     background-image: transparent;
-
+   .title{
+    font-size: 2em;
+   }
+   h1>a{
+    color:rgb(40, 59, 58);
+    text-decoration: none;
+    font-size: 2em;
+   }
+   h2{
+    color:rgb(58, 85, 84);
+    text-decoration: none;
+    font-size: 1.5em;
+   }
+   h5{
+    font-size: 1.25rem;
+   }
+   figure p{
+    p{
+        font-size: 1.6rem;
+    }
+   }
 
 }
 

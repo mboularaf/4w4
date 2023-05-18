@@ -39,7 +39,7 @@ $nouvel_class="";
                 </div>         
         </section>
         <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
-        <h2 class="site__description"><?= bloginfo('description'); ?></h2>
+       
 </header>
 <?php 
 if (! is_front_page() && ! is_404() &&  (is_category('cours') or is_category('note-4w4'))){
