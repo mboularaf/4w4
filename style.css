@@ -604,12 +604,16 @@ code {
   color: #FFFDD0;
   justify-content: center;
   text-align: center;
-  margin-top: 3rem;
 }
 @media screen and (min-width: 1000px) {
   .blocflex__article {
     display: flex;
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .blocflex__article {
+    margin-top: 3rem;
   }
 }
 
