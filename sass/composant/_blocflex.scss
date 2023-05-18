@@ -29,6 +29,7 @@
  @media screen  and (min-width:1000px) {
     display: flex;
     flex-direction: row;
+    flex: 1 0 125px;
     
  }
  @media screen and (min-width:1500px) {
@@ -60,6 +61,12 @@
     img{
         display: block;
         width: 150px;
+    }
+    h5 a{
+        @media screen and (min-width:1000px){
+            font-size: 1.8em;
+            margin-top: 2em;
+        }
     }
     
 

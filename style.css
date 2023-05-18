@@ -632,6 +632,7 @@ code {
   .blocflex__article {
     display: flex;
     flex-direction: row;
+    flex: 1 0 125px;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -665,6 +666,12 @@ code {
 .blocflex__figure img {
   display: block;
   width: 150px;
+}
+@media screen and (min-width: 1000px) {
+  .blocflex__figure h5 a {
+    font-size: 1.8em;
+    margin-top: 2em;
+  }
 }
 
 .recherche {
@@ -869,7 +876,7 @@ main.erreur404 .recherche input {
 }
 .menu__evenement .menu .menu-item,
 .menu__bloc-archive .menu .menu-item {
-  border: 2px solid rgb(58, 98, 226);
+  border: 4px solid rgb(58, 98, 226);
   margin: 20px;
   height: 100%;
   padding: 1em;
@@ -902,6 +909,7 @@ main.erreur404 .recherche input {
 
 .description {
   padding: 0.2em;
+  font-size: 0.8rem;
 }
 
 .img__archive {
@@ -913,7 +921,7 @@ main.erreur404 .recherche input {
 
 .archive__cours {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
-  background-size: 5%;
+  background-size: 10%;
   background-repeat: no-repeat;
   background-position: right 50% bottom 30%;
 }
@@ -932,8 +940,16 @@ main.erreur404 .recherche input {
 }
 @media screen and (min-width: 1000px) {
   .archive__4w4 {
-    background-size: 6%;
+    background-size: 10%;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu__bloc-archive ul {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
   }
 }
 

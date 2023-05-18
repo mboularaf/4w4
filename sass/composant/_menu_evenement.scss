@@ -14,7 +14,7 @@
         }
         
         .menu-item{//li
-            border: 2px solid rgb(58, 98, 226);
+            border: 4px solid rgb(58, 98, 226);
             margin: 20px;
             height: 100%;
             padding: 1em;
@@ -47,6 +47,7 @@
 }
 .description{
     padding: 0.2em;
+    font-size: 0.8rem;
 }
 .img__archive{
  width: 20%;
@@ -57,7 +58,7 @@
 }
 .archive__cours{
  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
- background-size: 5%;
+ background-size: 10%;
  background-repeat: no-repeat;
  background-position: right 50% bottom 30%;
  @media screen and (min-width:1000px) {
@@ -74,9 +75,17 @@
  background-repeat: no-repeat;
  background-position: right 50% bottom 30%;
  @media screen and (min-width:1000px) {
-    background-size:6%;
-    background-repeat: no-repeat;
-    
-    
+    background-size:10%;
+    background-repeat: no-repeat;    
  }
+}
+.menu__bloc-archive{
+    ul{
+        @media screen and (min-width:1000px) {
+        display:flex;
+        justify-content: center;
+        align-items: space-between;  
+     }
+    }
+    
 }
