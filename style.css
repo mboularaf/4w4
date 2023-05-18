@@ -739,11 +739,7 @@ code {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #518cc7;
-}
-.site__footer .footer__principal, .site__footer .footer__social {
-  display: flex;
-  flex-direction: column;
+  background-color: #3478bc;
 }
 @media screen and (min-width: 1000px) {
   .site__footer {

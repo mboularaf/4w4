@@ -10,7 +10,7 @@
 ?>
 <footer class="site__footer">
         
-        <section class="footer_col">
+        <section class="footer_co1">
                 <?php the_custom_logo(); ?> 
         </section>
         <section class="footer_col">
