@@ -32,6 +32,13 @@
                                     "container_class" => "menu__bloc-archive"
                                 )); ?>
         </section>
+        <section class="menu__film">
+            <?php  wp_nav_menu(array( 
+                                    "menu" => "film",
+                                    "container" => "nav",
+                                    "container_class" => "menu__film"
+                                )); ?>
+        </section>
         <section class="blocflex">
             <?php /*Boucle pour pouvoir créer des articles identiques et mettre une galerie fonctionnelle*/
                 if(have_posts()): 
@@ -39,6 +46,8 @@
                     $la_categorie = 'note-4w4'; 
                     if (in_category('cours')){
                       $la_categorie = 'cours';} 
+                      if (in_category('film')){
+                        $la_categorie = 'film';} 
                     if (in_category('galerie')){
                         $la_categorie = 'galerie';}
                     get_template_part("template-parts/categorie",$la_categorie);

@@ -11,8 +11,11 @@
     <?php wp_head(); ?>
 </head>
 <?php
+//$category = get_the_category();
+//$firstCategory = $category[0]->cat_name;
+//echo '<h1>'.  $firstCategory  .'</h1>';
 $nouvel_class="";
- if (is_front_page() or is_404()) {
+ if (is_front_page() or is_404() or !(is_category('cours') or is_category('note-4w4'))) {
     $nouvel_class = "no-aside";
  }?>
 <body class='custom-background site <?= $nouvel_class ?> '>
@@ -39,7 +42,7 @@ $nouvel_class="";
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>
 </header>
 <?php 
-if (! is_front_page() && ! is_404()){
+if (! is_front_page() && ! is_404() &&  (is_category('cours') or is_category('note-4w4'))){
     get_template_part("template-parts/aside"); 
 }
 
