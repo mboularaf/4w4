@@ -10,6 +10,7 @@
 //Permet de stylisé le blocflex__article soit chaque boite et réussir la galerie, 
 .blocflex__article{
  display: flex;
+ flex-direction: column;
  flex : 1 0 300px;
  flex-wrap: wrap;
  padding: 5px;
@@ -19,6 +20,12 @@
  color: #FFFDD0;
  justify-content: center;
  text-align: center;
+ margin-top: 3rem;
+ @media screen  and (min-width:1000px) {
+    display: flex;
+    flex-direction: row;
+ }
+
  
 }
 .blocflex__article:hover{
