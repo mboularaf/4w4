@@ -586,11 +586,16 @@ code {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: column;
-  min-width: 100vh;
+  flex-direction: column;
 }
 .blocflex h1 {
   padding: 5%;
+}
+@media screen and (min-width: 1000px) {
+  .blocflex {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .blocflex__article {
@@ -631,6 +636,7 @@ code {
 @media screen and (min-width: 1000px) {
   .blocflex__galerie {
     flex: 1 0 100%;
+    margin-top: 3rem;
   }
 }
 
@@ -716,7 +722,17 @@ code {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #0080ff;
+  background-color: #3478bc;
+}
+@media screen and (min-width: 1000px) {
+  .site__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: space-between;
+    width: 100%;
+    height: 100%;
+  }
 }
 .site__footer .footer_col {
   width: 100%;
@@ -724,6 +740,7 @@ code {
 }
 .site__footer .footer_col img {
   margin: 3rem;
+  border-radius: 50%;
 }
 .site__footer .footer_col .sidebar {
   display: flex;
@@ -861,7 +878,7 @@ main.erreur404 .recherche input {
 }
 .menu__evenement .menu .menu-item:hover,
 .menu__bloc-archive .menu .menu-item:hover {
-  color: #333;
+  color: rgb(29, 52, 200);
   background-color: rgba(0, 0, 0, 0.1);
 }
 

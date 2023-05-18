@@ -2,10 +2,15 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: column;
-    min-width: 100vh;
+    flex-direction: column;
+    //min-width: 100vh; problème responsive (pas vh) 
+    
     h1{
         padding: 5%;
+    }
+    @media screen and (min-width:1000px) {
+        display:flex ;
+        flex-direction: row;
     }
 }
 //Permet de stylisé le blocflex__article soit chaque boite et réussir la galerie, 
@@ -45,6 +50,7 @@
 
     @media screen and (min-width:1000px){
         flex: 1 0 100%;
+        margin-top: 3rem;
     }
 }
 .blocflex__figure{
