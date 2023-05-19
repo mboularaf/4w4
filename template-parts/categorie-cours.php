@@ -16,5 +16,17 @@
     <h6><?= $duree; ?></h6>
     <p><?php the_field('enseignant')?></p>
     <p><?php the_field('domaine')?></p>
+    <?php
+    $id_premiere_image = 0;
+    if (has_post_thumbnail())  {
+        the_post_thumbnail('thumbnail');
+
+    }
+    else{
+        echo get_the_post_thumbnail(137, "thumbnail");
+    }
+     
+     ?>
+    
 
 </article>
