@@ -46,11 +46,8 @@ if (! is_front_page() && ! is_404() &&  (is_category('cours') or is_category('no
     get_template_part("template-parts/aside"); 
 }
 //TEMPLATE ATELIER (ASIDE)
-/*if (is_page_template('template-parts/template-atelier.php')) {
-    get_template_part('template-parts/aside-atelier')
+else if (is_page_template('template-parts/template-atelier.php')) {
+    get_template_part('template-parts/aside-atelier');
 }
-*/
-
-
 ?>
     
