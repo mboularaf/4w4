@@ -1,6 +1,6 @@
 <?php
 /**
- * template name:Evenement
+ * template name:Atelier
  */
 ?>
 <?php get_header(); ?>
@@ -8,11 +8,12 @@
 <?php
 if ( have_posts() ) : the_post(); ?>
 <h1><?= get_the_title(); ?></h1>
+<? the_post_thumbnail('thumbnail');?>
 <?php the_content();?>
-<p>DATE<?php the_field('date_de_latelier'); ?></p>
-<p>HEURE<?php the_field('heure_de_la_formation'); ?></p>
-<p>DURÉE<?php the_field('duree'); ?></p>     
-<p>LOCAL<?php the_field('local'); ?></p>    
+<p>Date <?php the_field('date_de_latelier'); ?></p>
+<p>Heure <?php the_field('heure_de_la_formation'); ?></p>
+<p>Durée <?php the_field('duree'); ?></p>     
+<p>Local <?php the_field('local'); ?></p>    
 <?php endif;?>
 </main><!-- #main -->
 <?php
