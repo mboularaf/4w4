@@ -1,5 +1,6 @@
 .menu__evenement,
-.menu__bloc-archive{//nav
+.menu__bloc-archive,
+.menu__atelier{//nav
     background-color:transparent;
     width: 100%;
     height: 100%;
@@ -79,7 +80,7 @@
     background-repeat: no-repeat;    
  }
 }
-.menu__bloc-archive{
+.menu__bloc-archive, .menu__atelier{
     ul{
         @media screen and (min-width:1000px) {
         display:flex;
