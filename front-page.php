@@ -33,6 +33,14 @@
                                     "container_class" => "menu__bloc-archive"
                                 )); ?>
         </section>
+        <h2>Atelier</h2>
+        <section class="menu__atelier">
+            <?php  wp_nav_menu(array( 
+                                    "menu" => "atelier",
+                                    "container" => "nav",
+                                    "container_class" => "menu__atelier"
+                                )); ?>
+        </section>
     
         <section class="blocflex">
             <?php /*Boucle pour pouvoir créer des articles identiques et mettre une galerie fonctionnelle*/
