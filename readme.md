@@ -1,22 +1,19 @@
-# TP2
+# Epreuve finale
 ## 4W4-Conception d'interfaces et développement web
 ### Auteur : Mohamed Boularaf
 
 ####    Objectifs
-- Intégré correctement le footer.
-- Ajouter des images d'avant et les reprendre à l'intérieur des articles.
-- Site adaptatif en gros majorité (tablette, grands écrans mieux que téléphone).
-- Animations hovers durant les différentes sections.
-- Mettre un article (film) en avant première et le faire fonctionné.
-- Ouvrir le carrousel le fermer, changer de galerie, ainsi que changer les images sans le briser.
-- Intégration des icones dans les deux sections.
-- Widgets adapté en fonction du type d'écran.
-- Menu personnalisé de manière aquatique et reflète entièrement les couleurs du logo. 
-- Comprendre le fonctionnement de la fonction get thumbnail pour pouvoir chercher des images en avant.
-- Découverte d'une option dans l'inspecteur qui permet de desactiver les caches (pratique pour la programmation)
-- Rendre les images petites et belles de la galerie (version widget)
-- Faire de mon possible pour être le plus assidu sur mon site afin de avoir un site plutôt homogène.
-- Trouver des solutions pour contourner mes erreurs dans l'inspecteur.
+- Décrire en utilisant 5 pages un atelier. Ce dernier doit être construit selon le modèle template-atelier.php
+- Utilisation de 5 champs personnalisés ci-dessous:
+ 	Formateur (liste)
+	Date de début de l’atelier (date)
+	Heure de début (heure)
+	Durée d’une séance d’atelier (nombre)
+	Local ou se déroulera l’atelier (radio bouton)
+
+- Utilisation d'images en avant qui sont fournie dans le dossier images_ef
+- Utilisation d'un nouveau aside nommé aside-atelier. Il est crée à partir d'un nouveau template-part
+- Création du menu présent dans la page d'accueil. Il contient un titre, une description et une image.
 
 
 #### Liens de référence 
